@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+/* Quiz */
+.quiz {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  width: 60%;
+}
+
+.btn {
+  text-align: left;
+  width: 100%;
+  margin: 10px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn:hover:not([disabled]) {
+  background: #222;
+  color: #fff;
+}
+.btn:disabled {
+  cursor: no-drop;
+}
+
+/* Next and previous buttons */
+.button-container {
+  padding-left: 40px;
+  display: flex;
+  gap: 20px;
+}
+#next-button {
+  width: 70px;
+  cursor: pointer;
+  display: none;
+}
+#previous-button {
+  width: 70px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Correct and Incorrect  */
+.correct {
+  background: rgb(128, 217, 128);
+}
+.incorrect {
+  background: rgb(240, 5, 5);
+}
